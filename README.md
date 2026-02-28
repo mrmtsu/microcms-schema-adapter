@@ -1,0 +1,1 @@
+# microcms-schema-adapter

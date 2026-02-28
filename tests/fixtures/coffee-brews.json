@@ -1,0 +1,79 @@
+{
+  "apiFields": [
+    {
+      "fieldId": "bean",
+      "name": "使用した豆",
+      "kind": "relation",
+      "required": true,
+      "referencedApiEndpoint": "coffee_beans",
+      "multipleSelect": false
+    },
+    {
+      "fieldId": "brewMethod",
+      "name": "抽出方法",
+      "kind": "select",
+      "required": false,
+      "multipleSelect": false,
+      "selectInitialValue": [],
+      "selectItems": [
+        {
+          "id": "drip",
+          "value": "ドリップ"
+        },
+        {
+          "id": "espresso",
+          "value": "エスプレッソ"
+        },
+        {
+          "id": "french_press",
+          "value": "フレンチプレス"
+        },
+        {
+          "id": "aeropress",
+          "value": "エアロプレス"
+        },
+        {
+          "id": "cold_brew",
+          "value": "水出し"
+        },
+        {
+          "id": "other",
+          "value": "その他"
+        }
+      ]
+    },
+    {
+      "fieldId": "recipe",
+      "name": "抽出レシピ",
+      "kind": "textArea",
+      "required": false
+    },
+    {
+      "fieldId": "notes",
+      "name": "味の感想",
+      "kind": "textArea",
+      "required": false
+    },
+    {
+      "fieldId": "rating",
+      "name": "評価",
+      "kind": "number",
+      "required": false,
+      "numberMin": 1,
+      "numberMax": 10
+    },
+    {
+      "fieldId": "date",
+      "name": "飲んだ日",
+      "kind": "date",
+      "required": true
+    },
+    {
+      "fieldId": "photo",
+      "name": "写真",
+      "kind": "media",
+      "required": false
+    }
+  ],
+  "customFields": []
+}

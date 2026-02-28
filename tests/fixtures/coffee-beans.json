@@ -1,0 +1,117 @@
+{
+  "apiFields": [
+    {
+      "fieldId": "name",
+      "name": "豆の名前",
+      "kind": "text",
+      "required": true,
+      "isUnique": false
+    },
+    {
+      "fieldId": "country",
+      "name": "産地（国）",
+      "kind": "text",
+      "required": false,
+      "isUnique": false
+    },
+    {
+      "fieldId": "region",
+      "name": "産地（地域）",
+      "kind": "text",
+      "required": false,
+      "isUnique": false
+    },
+    {
+      "fieldId": "variety",
+      "name": "品種",
+      "kind": "text",
+      "required": false,
+      "isUnique": false
+    },
+    {
+      "fieldId": "process",
+      "name": "精製方法",
+      "kind": "select",
+      "required": false,
+      "multipleSelect": false,
+      "selectInitialValue": [],
+      "selectItems": [
+        {
+          "id": "washed",
+          "value": "ウォッシュド"
+        },
+        {
+          "id": "7WL-MabZMf",
+          "value": "セミウォッシュド"
+        },
+        {
+          "id": "natural",
+          "value": "ナチュラル"
+        },
+        {
+          "id": "honey",
+          "value": "ハニー"
+        },
+        {
+          "id": "anaerobic",
+          "value": "アナエロビック"
+        },
+        {
+          "id": "other",
+          "value": "その他"
+        }
+      ]
+    },
+    {
+      "fieldId": "roastLevel",
+      "name": "焙煎度",
+      "kind": "select",
+      "required": false,
+      "multipleSelect": false,
+      "selectInitialValue": [],
+      "selectItems": [
+        {
+          "id": "light",
+          "value": "浅煎り"
+        },
+        {
+          "id": "medium_light",
+          "value": "中浅煎り"
+        },
+        {
+          "id": "medium",
+          "value": "中煎り"
+        },
+        {
+          "id": "medium_dark",
+          "value": "中深煎り"
+        },
+        {
+          "id": "dark",
+          "value": "深煎り"
+        }
+      ]
+    },
+    {
+      "fieldId": "roaster",
+      "name": "焙煎者・店",
+      "kind": "text",
+      "required": false,
+      "isUnique": false
+    },
+    {
+      "fieldId": "tags",
+      "name": "タグ",
+      "kind": "relationList",
+      "required": false,
+      "referencedApiEndpoint": "tags"
+    },
+    {
+      "fieldId": "photo",
+      "name": "写真",
+      "kind": "media",
+      "required": false
+    }
+  ],
+  "customFields": []
+}

@@ -1,0 +1,92 @@
+{
+  "apiFields": [
+    {
+      "fieldId": "title",
+      "name": "タイトル",
+      "kind": "text",
+      "required": true,
+      "isUnique": false
+    },
+    {
+      "fieldId": "content",
+      "name": "本文",
+      "kind": "richEditorV2",
+      "required": true
+    },
+    {
+      "fieldId": "thumbnail",
+      "name": "サムネイル",
+      "kind": "media",
+      "required": false
+    },
+    {
+      "fieldId": "tags",
+      "name": "タグ",
+      "kind": "relationList",
+      "required": false,
+      "referencedApiEndpoint": "tags"
+    },
+    {
+      "fieldId": "summary",
+      "name": "サマリー",
+      "kind": "textArea",
+      "required": false
+    },
+    {
+      "fieldId": "intent",
+      "name": "intent",
+      "kind": "select",
+      "required": false,
+      "multipleSelect": false,
+      "selectInitialValue": [],
+      "selectItems": [
+        {
+          "id": "twSDEZhWWz",
+          "value": "how_to"
+        },
+        {
+          "id": "6IKgf-qf7Y",
+          "value": "troubleshooting"
+        },
+        {
+          "id": "6XPdzYuCs0",
+          "value": "comparison"
+        },
+        {
+          "id": "NZXgW-37XL",
+          "value": "case_study"
+        },
+        {
+          "id": "C7KlT2FZrB",
+          "value": "architecture"
+        }
+      ]
+    },
+    {
+      "fieldId": "keyPoints",
+      "name": "keyPoints",
+      "kind": "textArea",
+      "required": false
+    },
+    {
+      "fieldId": "prerequisites",
+      "name": "prerequisites",
+      "kind": "textArea",
+      "required": false
+    },
+    {
+      "fieldId": "lastReviewedAt",
+      "name": "lastReviewedAt",
+      "kind": "date",
+      "required": false,
+      "dateFormat": false
+    },
+    {
+      "fieldId": "isEvergreen",
+      "name": "isEvergreen",
+      "kind": "boolean",
+      "required": false
+    }
+  ],
+  "customFields": []
+}

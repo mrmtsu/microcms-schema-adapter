@@ -1,0 +1,12 @@
+{
+  "apiFields": [
+    {
+      "fieldId": "name",
+      "name": "タグ名",
+      "kind": "text",
+      "required": true,
+      "isUnique": false
+    }
+  ],
+  "customFields": []
+}
